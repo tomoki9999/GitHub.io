@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あおのアロマスパ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>あおのアロマスパ</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">私たちについて</a></li>
+                <li><a href="#services">サービス</a></li>
+                <li><a href="#pricing">料金表</a></li>
+                <li><a href="#contact">ご予約はこちら</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>私たちについて</h2>
+        <p>私たちは、リラックスと癒しを提供するプロフェッショナルなマッサージサービスです。お客様の健康と幸せを最優先に考えています。</p>
+    </section>
+    <section id="services">
+        <h2>サービス</h2>
+        <ul>
+            <li>全身マッサージ</li>
+            <li>足つぼマッサージ</li>
+            <li>肩こり解消マッサージ</li>
+        </ul>
+    </section>
+    <section id="pricing">
+        <h2>料金表</h2>
+        <table>
+            <tr>
+                <th>サービス</th>
+                <th>時間</th>
+                <th>料金</th>
+            </tr>
+            <tr>
+                <td>全身マッサージ</td>
+                <td>60分</td>
+                <td>5,000円</td>
+            </tr>
+            <tr>
+                <td>全身マッサージ</td>
+                <td>90分</td>
+                <td>7,500円</td>
+            </tr>
+            <tr>
+                <td>足つぼマッサージ</td>
+                <td>30分</td>
+                <td>3,000円</td>
+            </tr>
+            <tr>
+                <td>肩こり解消マッサージ</td>
+                <td>45分</td>
+                <td>4,000円</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>ご予約はこちら</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="e257b84c-0fe7-475d-a0b5-d07a45b71ed2"> <!-- Required -->
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 あおのアロマスパ. All rights reserved.</p>
+    </footer>
+</body>
+</html>
